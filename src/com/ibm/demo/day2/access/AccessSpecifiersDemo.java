@@ -14,8 +14,13 @@ public class AccessSpecifiersDemo {
 //
 //	}
 	
-	//static final int finalField = 10;
-	static final int FINAL_FIELD = 10;//snake case
+	//final keyword
+	   // final field- can not reassign a value
+	   // final method -- can not be overriden
+	   // final class -- can 
+	
+	//static final int finalField = 10;// use snake case
+	static final int FINAL_FIELD = 10;
 	
 	
 	public static void main(String[] args) {

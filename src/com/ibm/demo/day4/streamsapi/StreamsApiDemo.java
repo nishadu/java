@@ -34,7 +34,8 @@ public class StreamsApiDemo {
 		
 		// take argument of lambda expression
 		
-		System.out.println("3. List of employees with salary > 91000: ");
+		System.out.println("3. List of employees with salary > 91000: ")
+		
 		
 	
 	}

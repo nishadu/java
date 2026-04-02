@@ -34,7 +34,26 @@ public class StreamsApiDemo {
 		
 		// take argument of lambda expression
 		
-		System.out.println("3. List of employees with salary > 91000: ")
+		System.out.println("4. List of employees with salary > 91000: ");
+		employees.forEach((emp) -> {
+			if (emp.salary > 91000)
+				System.out.println(emp);
+		});
+
+		System.out.println("5. Increase employees' salary by 10%: ");
+
+		List<Employee> updatedEmployees = employees.stream()
+				.map(e -> new Employee(e.getId(), e.getName(), e.getSalary() * 1.10)).toList();
+		updatedEmployees.forEach(e -> System.out.println(e.toString()));
+
+		// Also updates original employees list
+//		List<Employee> updatedEmployees = employees.stream().map(emp -> {
+//			emp.setSalary(emp.getSalary() * 1.10);
+//			return emp;
+//		}).toList();
+
+		updatedEmployees.forEach(e -> System.out.println(e.toString()));
+		employees.forEach(e -> System.out.println(e.toString()));
 		
 		
 	
